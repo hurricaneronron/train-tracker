@@ -53,20 +53,10 @@ database.ref( ).on("child_added", function( snap ) {
   var currentTime = moment( ).unix( )
   console.log("Current Time: "+currentTime+"")
 
-  // var addDate = moment(snap.val( ).firstTrain, 'HH:mm').subtract(1, 'years')
-  // console.log(addDate)
-  // var convertedDate = moment(addDate).add(1, 'years')
-  // console.log(convertedDate)
-  // var unixDate = moment(convertedDate).unix( )
-  // console.log(unixDate)
-
   var firstTrainConverted = moment(firstTrain, "HH:mm").subtract(1, "years")
 
   var timeDiff = moment().diff(moment(firstTrainConverted), "minutes")
     console.log("Time Difference: " + timeDiff)
-
-  // var timeDiff = ((currentTime - unixDate) / 60).toFixed(0)
-  // console.log("Time Difference: "+timeDiff+"")
 
   var remainder = timeDiff % frequency
   console.log("Remainder: "+remainder+"")
