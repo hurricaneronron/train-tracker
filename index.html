@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Train Tracker</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Oswald" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container main">
+		<div class="jumbotron text-center">
+			<h1 id="title">TRAIN TRACKER</h1>
+			<hr>
+			<h5 class="text-center" id="current-time"></h5>
+		</div>
+		
+		<div class="row">	
+		<div class="col-xl-6">
+			<div class="card trainForm">
+				<div class="card-title text-center">
+					<h3>ADD TRAIN</h3>
+				</div>
+
+				<div class="card-block">	
+					<form>
+						<div class="form-group">
+							<label for="train-name">TRAIN NAME</label>
+							<input class="form-control" id="train-name" type="text">
+						</div>
+
+						<div class="form-group">
+							<label for="destination">DESTINATION</label>
+							<input class="form-control" id="destination" type="text">
+						</div>
+
+						<div class="form-group">
+							<label for="first-train-time">FIRST TRAIN TIME (HH:mm - 24 hr time)</label> 
+							<input class="form-control" id="first-train" type="text">
+						</div>
+
+						<div class="form-group">
+							<label for="frequency">FREQUENCY (MIN)</label>
+							<input class="form-control" id="frequency" type="text">
+						</div>
+
+						<div class="form-group">
+							<button class="btn btn-dark btn-sm" id="submit-btn" type="submit">SUBMIT</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	
+		<div class="col-xl-6">
+			<div class="card trainSchedule">
+				<div class="card-title text-center">
+					<h3>CURRENT TRAIN SCHEDULE</h3>
+				</div>
+				<div class="card-block">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>TRAIN NAME</th>
+								<th>DESTINATION</th>
+								<th>FREQUENCY (MIN)</th>
+								<th>NEXT ARRIVAL</th>
+								<th>MINUTES AWAY</th>
+							</tr>
+						</thead>
+						<tbody id="train-data">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+		
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script src = "https://code.jquery.com/jquery.js"> </script> 
+<script src = "https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
+<script src="assets/app.js" rel="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+body, html{
+  background: url("images/background.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.panel-header {
+  color: black;
+}
+
+#title {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 48pt;
+}
+
+.jumbotron {
+  background-color: rgba(255, 255, 255, .6);
+  margin: 5px;
+  padding: 10px;
+}
+
+.card {
+  margin: 5px;
+  padding: 10px;
+}
+
+th {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+td {
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, .8);
+  font-family: 'Oswald', sans-serif;
+}
+
+h3{
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 32px;
+}
+
+h5 {
+  font-family: 'Bowlby One SC', cursive;
+  text-transform: uppercase;
+}
+
+#current-time {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  color:black;
+}
+
+.trainForm{
+  background-color: rgba(255, 255, 255, .6);
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.trainSchedule {
+  background-color: rgba(255, 255, 255, .6);
+}
